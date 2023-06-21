@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random cards</title>
+    <link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+		<div class="wrapper">
+			<h1>Update the card</h1>
+			<button type="button"class="flip">Change</button>
+			<div class="card">
+				<img class="suite" src="img/spade.svg" alt="sign">
+				<div class="number">6</div>
+				<img class="suite" src="img/spade.svg" alt="sign">
+			</div>
+			<!-- <div class="card-back"></div> -->
+			<p>Card will change in <span class="countdown">10</span> seconds.</p>
+			<progress value="0" max="10" id="progressBar"></progress>
+			<div id="change">
+					<p>Change width:</p>
+					<input type="number" id="width" class="userinput" placeholder="Try 250">
+					<p>Change height:</p>
+					<input type="number" id="height" class="userinput" placeholder="Try 350">
+					<button id="submit" type="submit">Submit</button>
+			</div>
+		</div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>

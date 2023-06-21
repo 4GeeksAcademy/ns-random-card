@@ -1,0 +1,105 @@
+body {
+    background: green;
+    text-align: center;
+		font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+		margin: 0;
+}
+button {
+    padding: 5px 20px;
+}
+h1 {
+    font-size: 32px;
+    color: #fff;
+		margin-top: 0;
+}
+.card {
+	background: #ddd;
+	padding: 20px;
+	border-radius: 10px;
+	width: 200px;
+	height: 300px;
+	margin: 20px auto;
+	display: flex;
+	box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
+	justify-content: space-between;
+	flex-direction: column;
+	color: #000;
+	border: solid 22px #fff;
+	transform: rotate3d(0, 0, 0, 0deg);
+	transition: transform .3s;
+	cursor: pointer;
+	min-height: 200px;
+	min-width: 170px;
+}
+.card:hover {
+	transform: rotate3d(1, -60, 20, 9deg);
+	transition: transform .3s;
+}
+.card-back {
+	content: '';
+	position: absolute;
+	width: 274px;
+	height: 384px;
+	background: url(img/card-back.jpg);
+	background-size: contain;
+	top: 117px;
+	z-index: -1;
+	margin: 0 0 0 -136px;
+	left: 50%;
+	border-radius: 8px;
+	transform: rotate(81deg);
+	box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
+}
+.number {
+    font-size: 100px;
+}
+.suite {
+    font-size: 44px;
+}
+.suite:last-child {
+    align-self: end;
+}
+.red {
+    color: #d30000;
+}
+img {
+    width: 40px;
+}
+p {
+    color: #fff;
+    margin-top: 14px;
+}
+.userinput {
+    width: 60px;
+    margin: 0 10px;
+    display: inline-block;
+    height: 20px;
+}
+#change {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    margin: 0 auto;
+}
+progress {
+	border-radius: 50px;
+	height: 15px;
+	width: 284px;
+	margin-bottom: 8px;
+	border: solid 2px #fff;
+}
+::-webkit-progress-value {
+  background-color: #000;
+	border-radius: 50px;
+}
+::-webkit-progress-bar {
+	border-radius: 50px;
+	background-color: #ddd;
+}
+.wrapper {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
